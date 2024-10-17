@@ -242,8 +242,8 @@ var a=[
 ]
 var n_val=a.map((val,ind)=>{
     return(
-<>
-<table border={2}>
+        <>
+       
 <tr key={ind}>
     <td>{val["id"]}</td>
     <td>{val["title"]}</td>
@@ -253,7 +253,8 @@ var n_val=a.map((val,ind)=>{
     <td><img src={val["image"]} alt="img" width={200}/></td>
     <td><button>{val["rating"]["rate"]}</button></td>
 </tr>
-</table>
+
+
 </>
     )
 })
@@ -262,7 +263,7 @@ var n_val=a.map((val,ind)=>{
 function Apicomponent(){
 return(
 <>
-<table>{n_val}</table>
+<table border={2}>{n_val}</table>
 </>
 )
 }
