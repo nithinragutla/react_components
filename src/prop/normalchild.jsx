@@ -20,12 +20,13 @@ var Child_com = (props) => {
  </>
      )
     })
-    
+
  
     return (
      <>
+    
+     <h1>hlo this is normalform child</h1>
      <table border={2}>
-     <h1>hlo this is child</h1>
      {res}
      </table>
      </>

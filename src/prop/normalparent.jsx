@@ -1,4 +1,4 @@
-import Sec_com from "./second";
+import Child_com from "./normalchild.jsx";
 
 var obj=[
     {
@@ -64,12 +64,12 @@ var obj=[
     
 ]
 
-var Prop_com=()=>{
+var Parent_com=()=>{
     return(
        <>
-       <h1>hello iam normalformparent</h1>
-       <Sec_com>{obj} </Sec_com>  
+       <h1>hello iam normalform parent</h1>
+         <Child_com z={obj}/>
        </> 
     )
 }
-export default Prop_com;
+export default Parent_com;
